@@ -13,8 +13,10 @@ title: Adversarial Training in Deep Fusion Modeling
 	<p>An adversarial example is an image with noise masked over each pixel that causes a model to make a mistake in labeling. Since an adversarial example’s predicted output should fail to match the true label, creating an adversarial example differs from the typical way of training a classifier. The usual way would be to minimize the loss of the input’s predicted output to the true output as represented by...</p>
 	<h2>Training Algorithm</h2>
 	<p>We will implement our adversarial training algorithm through developing adversarial examples from the input sources and optimizing the maximum perturbation added to the data. First, we will find the best input source to perturb as determined by the largest loss we observe based on random noise perturbation and calculate the best perturbation to add by using FGSM. Then, we plan on repeating this procedure for a defined percentage of the dataset so that we can populate our training set with these adversarial examples. Ultimately, this should make the model more robust against adversarial attacks in one of its many input sources.</p>
+	<img src = "algorithm.png">
 	<h2>Results</h2>
 	<p>From our research project, we plan on observing to see if we were able to make the model more robust through implementing the different adversarial attack techniques instead of the randomly generated noise on a single source. This is relevant because we further explore attacks that are targeted towards a certain class through selecting the most perturbation to an image, which pose a more serious risk than randomly corrupting an input source. We plan on communicating our findings through a research paper and expanding on the work done by Kim, Taewan, and Joydeep Ghosh.</p>
+	<img src = "boundingbox.png">
 	<h2>Conclusion</h2>
 	<p>This is what we ended up with!</p>
 </div><!-- /.blurb -->
