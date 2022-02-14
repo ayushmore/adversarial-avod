@@ -3,6 +3,18 @@ layout: default
 title: Adversarial Training in Deep Fusion Modeling
 ---
 <div class="blurb">
-	<h1>Adversarial Training in Deep Fusion Modeling Applications in Autonomous Driving!</h1>
+	<h1>Adversarial Training in Deep Fusion Modeling in Autonomous Driving</h1>
 	<p>Amy Nguyen & Ayush More</p>
+	<h2>Introduction</h2>
+	<p>Deep fusion models benefit from multiple input sources as they provide both complementary information. This enriches the model’s feature space, and shared information, which compensates for the shortcomings of different sources. Robustness in deep fusion models is primarily associated with shared information as the input sources face varying corruption and it is important for the model to be balanced in its performance regardless of the corruption. Kim, Taewan, and Joydeep Ghosh's [1] work highlights the motivation of their research through showcasing unbalanced robustness in an error-free model for linear fusion data. To address this issue, they provide three different approaches, two of which were training algorithms and the other implemented a structural change to the model's feature fusion. By focusing on autonomous driving, the authors experimented with a deep fusion object detection model, AVOD, and found their methods to be effective in developing robustness. In the current setting, the noise is generated randomly from a Gaussian distribution rather than a targeted attack, which does not account for intentional corruption from third parties, such as hackers. We plan on expanding on their research by incorporating adversarial examples, which are images with noise masked over each pixel that causes a model to make a mistake in labeling. These are slightly perturbed  into the training algorithm rather than use images perturbed by random noise. The AVOD model uses two inputs to create its inferences, images and LIDAR point clouds. By creating subsets of adversarial examples from the image data, we will train the model on the corrupted data and evaluate its robustness against single source noise. We believe that this is relevant given the risks that autonomous vehicles pose to pedestrians - it is important that we ensure the inferences and decisions made by the model are robust against corruption, especially if it is intentional from outside threats.</p>
+	<h2>Data</h2>
+	<p>Description of the Data</p>
+	<h2>Adversarial Examples</h2>
+	<p>What is an adversarial example> What does it look like?</p>
+	<h2>Training Algorithm</h2>
+	<p>Check out how we did this!</p>
+	<h2>Results</h2>
+	<p>Check out our results!</p>
+	<h2>Conclusion</h2>
+	<p>This is what we ended up with</p>
 </div><!-- /.blurb -->
